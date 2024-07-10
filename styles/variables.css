@@ -1,3 +1,9 @@
-::root {
-    
+:root {
+    --font-family-primary: 'Proxima Nova', sans-serif;
+
+    --color-black: #000000;
+    --color-black-primary: #333333;
+
+    --color-gray: #555555;
+    --color-gray-lighter: #999999;
 }

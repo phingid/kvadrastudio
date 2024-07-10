@@ -1,0 +1,10 @@
+.button {
+    font-weight: 600;
+    line-height: 1.62;
+    padding: 10px 30px;
+    border: 1px solid var(--color-black-primary);
+}
+
+.hr__solid {
+    border-bottom: 1px solid var(--color-gray-lighter);
+}

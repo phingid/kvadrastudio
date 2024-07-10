@@ -1,0 +1,66 @@
+.header {
+    padding-block: 20px 30px;
+}
+
+.header__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__contacts {
+    color: var(--color-gray);
+}
+
+.header__city {
+    font-weight: 600;
+    color: var(--color-black-primary);
+}
+
+.header__email {
+    font-weight: 600;
+    color: var(--color-black-primary);
+}
+
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header__phone {
+    font-weight: 600;
+    color: var(--color-black-primary);
+}
+
+.header__line {
+    margin-block: 30px;
+}
+
+.header__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__menu-item {
+    display: flex;
+    align-items: center;
+    gap: 76px;
+
+    line-height: 2.0;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--color-black);
+}
+.header__menu-item:nth-child(n + 1)::after {
+    --size: 5px;
+    content: '';
+    height: var(--size);
+    width: var(--size);
+    border-radius: 100%;
+    background-color: var(--color-black-primary);
+}
+.header__menu-item:last-child::after {
+    content: none;
+}
