@@ -1,10 +1,20 @@
 .button {
+    font-family: inherit;
     font-weight: 600;
     line-height: 1.62;
     padding: 10px 30px;
     border: 1px solid var(--color-black-primary);
+    transition: all ease 0.8s;
+}
+.button:hover {
+    border-color: var(--color-gray);
+    color: var(--color-gray);
 }
 
 .hr__solid {
     border-bottom: 1px solid var(--color-gray-lighter);
+}
+
+.burger {
+    display: none;
 }

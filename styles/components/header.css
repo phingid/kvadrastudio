@@ -20,6 +20,7 @@
 .header__email {
     font-weight: 600;
     color: var(--color-black-primary);
+    transition: color ease 0.6s;
 }
 
 .header__wrapper {
@@ -31,6 +32,7 @@
 .header__phone {
     font-weight: 600;
     color: var(--color-black-primary);
+    transition: color ease 0.6s;
 }
 
 .header__line {
@@ -52,6 +54,7 @@
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: var(--color-black);
+    transition: color ease 0.6s;
 }
 .header__menu-item:nth-child(n + 1)::after {
     --size: 5px;
@@ -63,4 +66,50 @@
 }
 .header__menu-item:last-child::after {
     content: none;
+}
+
+/* hover's */
+
+.header__email:hover,
+.header__phone:hover,
+.header__menu-item:hover {
+    color: var(--color-gray);
+}
+
+/* adaptive */
+
+@media screen and (max-width: 1440px) {
+    .header__contacts {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header__wrapper {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1245px) {
+    .container {
+        --padding-inline: 0px;
+    }
+
+    .header__logo {
+        width: 186px;
+        height: 53px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .burger {
+        display: block;
+    }
+
+    .header__top > :not(.header__logo-link, .burger) {
+        display: none;
+    }  
+
+    .header__menu {
+        display: none;
+    }
 }

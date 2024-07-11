@@ -11,3 +11,10 @@ body {
     max-width: calc(var(--max-width) + var(--padding-inline) * 2);
     padding-inline: var(--padding-inline);
 }
+
+@media screen and (max-width: 345px) {
+    .container {
+        --max-width: 345px;
+        --padding-inline: 16px;
+    }
+}
