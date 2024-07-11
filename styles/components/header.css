@@ -90,10 +90,6 @@
 }
 
 @media screen and (max-width: 1245px) {
-    .container {
-        --padding-inline: 0px;
-    }
-
     .header__logo {
         width: 186px;
         height: 53px;

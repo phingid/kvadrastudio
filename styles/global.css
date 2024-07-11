@@ -12,9 +12,8 @@ body {
     padding-inline: var(--padding-inline);
 }
 
-@media screen and (max-width: 345px) {
+@media screen and (max-width: 1245px) {
     .container {
-        --max-width: 345px;
-        --padding-inline: 16px;
+        --padding-inline: 0px;
     }
 }
